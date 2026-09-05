@@ -22,10 +22,12 @@ namespace UITK_SimpleTimeline
         /// </summary>
         /// <param name="go">GameObject to set.</param>
         public void SetRootObject(GameObject go);
+#if UNITY_EDITOR
         /// <summary>
         /// everyone has to have their own uitk rep :(
         /// </summary>
         /// <returns></returns>
         public VisualElement UITKRepresentation(int index);
+#endif
     }
 }

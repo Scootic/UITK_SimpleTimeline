@@ -17,11 +17,12 @@ namespace UITK_SimpleTimeline
         [Tooltip("Decides how keyframes lerp whenever the time is before the first keyframe," +
             " or after the last keyframe.\nWrapMode.Clamp keeps things static in those extremes, whereas " +
             "the other types of WrapModes cause keyframes to lerp beyond their border.")]public WrapMode WrappingMode = WrapMode.Clamp;
+#if UNITY_EDITOR
         public override VisualElement UITKRepresentation(int index)
         {
             return new TimelineCurveField<T,U>("", this, index);
         }
-
+#endif
         public override string ToString()
         {
             return "Generic Typed Timeline Curve";
@@ -278,8 +279,9 @@ namespace UITK_SimpleTimeline
         /// <returns>Closest two indexes, index0 is to the left, index1 is to the right, unless given time
         /// is larger the last keyframe, or smaller than the first.</returns>
         public abstract int[] ClosestTwoIndexes(float t);
-
+#if UNITY_EDITOR
         public abstract VisualElement UITKRepresentation(int index);
+#endif
         /// <summary>
         /// Should only really be used by in-scene components, like SimpleTimelineAnimationComponent.cs
         /// Sets an in-scene GameObject to be the root element to be animated.
