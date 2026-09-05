@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72803af6ba98e434fbbd7462d7a3b5d8, type: 3}
+  m_Name: ExampleTimeline3
+  m_EditorClassIdentifier: 
+  Timeline:
+    Loop: 1
+    Duration: 15
+    Curves:
+    - rid: 7219385762494545988
+    - rid: 7219385762494545989
+    - rid: 7219385762494545990
+    - rid: 7219385762494545991
+  references:
+    version: 2
+    RefIds:
+    - rid: 7219385762494545988
+      type: {class: RotationCurve, ns: UITK_SimpleTimeline.Examples, asm: UITKSimpleTimeline_Examples}
+      data:
+        ToAffect: Rotater
+        WrappingMode: 1
+        keyframes:
+        - KeyframeIndex: 0
+          CurveIndex: 0
+          Time: 0
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 2
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: 0, y: 0, z: 0}
+        - KeyframeIndex: 1
+          CurveIndex: 0
+          Time: 15
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: 0, y: 720, z: 0}
+    - rid: 7219385762494545989
+      type: {class: SpawnGameObjectCurve, ns: UITK_SimpleTimeline.Examples, asm: UITKSimpleTimeline_Examples}
+      data:
+        ToAffect: {fileID: 3823822571307690289, guid: c605021d68c3e9341bb5fb04951bb5ab, type: 3}
+        WrappingMode: 1
+        keyframes:
+        - KeyframeIndex: 0
+          CurveIndex: 1
+          Time: 1.4
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value:
+            SpawnPos: {x: 2, y: 10, z: 0}
+            SpawnScale: {x: 1, y: 1, z: 1}
+            SpawnRot: {x: 0, y: 0, z: 0, w: 1}
+            SetToBeChildOfRoot: 1
+            name: GameObject
+        - KeyframeIndex: 1
+          CurveIndex: 1
+          Time: 6.15
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value:
+            SpawnPos: {x: -2, y: 10, z: 0}
+            SpawnScale: {x: 1, y: 1, z: 1}
+            SpawnRot: {x: 0, y: 0, z: 0, w: 1}
+            SetToBeChildOfRoot: 1
+            name: GameObject
+        - KeyframeIndex: 2
+          CurveIndex: 1
+          Time: 11.8
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value:
+            SpawnPos: {x: 0, y: 10, z: -2}
+            SpawnScale: {x: 1, y: 1, z: 1}
+            SpawnRot: {x: 0, y: 0, z: 0, w: 1}
+            SetToBeChildOfRoot: 1
+            name: GameObject
+    - rid: 7219385762494545990
+      type: {class: ScaleCurve, ns: UITK_SimpleTimeline.Examples, asm: UITKSimpleTimeline_Examples}
+      data:
+        ToAffect: Rotater/Cube1
+        WrappingMode: 1
+        keyframes:
+        - KeyframeIndex: 0
+          CurveIndex: 2
+          Time: 0
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: 1, y: 1, z: 1}
+        - KeyframeIndex: 1
+          CurveIndex: 2
+          Time: 3.86875
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: 1.5, y: 1.5, z: 1.5}
+        - KeyframeIndex: 2
+          CurveIndex: 2
+          Time: 7.5
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: 1, y: 1, z: 1}
+        - KeyframeIndex: 3
+          CurveIndex: 2
+          Time: 11.675
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: 0.5, y: 0.5, z: 0.5}
+        - KeyframeIndex: 4
+          CurveIndex: 2
+          Time: 15
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: 1, y: 1, z: 1}
+    - rid: 7219385762494545991
+      type: {class: PositionCurve, ns: UITK_SimpleTimeline.Examples, asm: UITKSimpleTimeline_Examples}
+      data:
+        ToAffect: Rotater/Cube2
+        WrappingMode: 1
+        keyframes:
+        - KeyframeIndex: 0
+          CurveIndex: 3
+          Time: 0
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: -2, y: 3, z: 0}
+        - KeyframeIndex: 1
+          CurveIndex: 3
+          Time: 3.9
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: -2, y: 0, z: 0}
+        - KeyframeIndex: 2
+          CurveIndex: 3
+          Time: 7.5
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: -2, y: 3, z: 0}
+        - KeyframeIndex: 3
+          CurveIndex: 3
+          Time: 11.51875
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: -2, y: 6, z: 0}
+        - KeyframeIndex: 4
+          CurveIndex: 3
+          Time: 15
+          InSlope: 0
+          OutSlope: 0
+          TangentMode: 0
+          InTangent: 0
+          OutTangent: 0
+          WeightedMode: 0
+          InWeight: 0
+          OutWeight: 0
+          Value: {x: -2, y: 3, z: 0}

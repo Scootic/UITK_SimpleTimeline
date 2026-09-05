@@ -1,0 +1,16 @@
+{
+    "name": "UITK_SimpleTimeline_Editor",
+    "rootNamespace": "UITK_SimpleTimeline.Editor",
+    "references": [
+        "GUID:6c5edb54959300845a78dbe0ec3e6017"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,14 @@
+{
+    "name": "UITK_SimpleTimeline",
+    "rootNamespace": "UITK_SimpleTimeline",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
